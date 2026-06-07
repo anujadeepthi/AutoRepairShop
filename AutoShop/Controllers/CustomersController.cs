@@ -21,25 +21,41 @@ namespace AutoShop.Controllers
         // GET: Customers
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Customers.ToListAsync());
+            try { 
+                    return View(await _context.Customers.ToListAsync());
+            }
+            catch (Exception ex)
+            {
+                await LogErrorAsync(ex.ToString());
+                return BadRequest("An error occurred!");
+            }
         }
 
         // GET: Customers/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
-            }
 
-            var customer = await _context.Customers
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (customer == null)
+                if (id == null)
+                {
+                    return NotFound();
+                }
+
+                var customer = await _context.Customers
+                    .FirstOrDefaultAsync(m => m.Id == id);
+                if (customer == null)
+                {
+                    return NotFound();
+                }
+
+                return View(customer);
+            }
+            catch (Exception ex)
             {
-                return NotFound();
+                await LogErrorAsync(ex.ToString());
+                return BadRequest("An error occurred!");
             }
-
-            return View(customer);
         }
 
         // GET: Customers/Create
@@ -55,29 +71,45 @@ namespace AutoShop.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Email,Phone,Address,Zip,City,State")] Customer customer)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(customer);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+            try 
+            { 
+                if (ModelState.IsValid)
+                {
+                    _context.Add(customer);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(customer);
             }
-            return View(customer);
+            catch (Exception ex)
+            {
+                await LogErrorAsync(ex.ToString());
+                return BadRequest("An error occurred!");
+            }
         }
 
         // GET: Customers/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+            try
             {
-                return NotFound();
-            }
+                if (id == null)
+                {
+                    return NotFound();
+                }
 
-            var customer = await _context.Customers.FindAsync(id);
-            if (customer == null)
-            {
-                return NotFound();
+                var customer = await _context.Customers.FindAsync(id);
+                if (customer == null)
+                {
+                    return NotFound();
+                }
+                return View(customer);
             }
-            return View(customer);
+            catch (Exception ex)
+            {
+                await LogErrorAsync(ex.ToString());
+                return BadRequest("An error occurred!");
+            }
         }
 
         // POST: Customers/Edit/5
@@ -87,32 +119,40 @@ namespace AutoShop.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email,Phone,Address,Zip,City,State")] Customer customer)
         {
-            if (id != customer.Id)
+            try { 
+                if (id != customer.Id)
+                {
+                    return NotFound();
+                }
+
+                if (ModelState.IsValid)
+                {
+                    try
+                    {
+                        _context.Update(customer);
+                        await _context.SaveChangesAsync();
+                    }
+                    catch (DbUpdateConcurrencyException)
+                    {
+                        if (!CustomerExists(customer.Id))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
+                    }
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(customer);
+            }
+            catch (Exception ex)
             {
-                return NotFound();
+                await LogErrorAsync(ex.ToString());
+                return BadRequest("An error occurred!");
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(customer);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CustomerExists(customer.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(customer);
         }
 
         // GET: Customers/Delete/5
@@ -152,5 +192,19 @@ namespace AutoShop.Controllers
         {
             return _context.Customers.Any(e => e.Id == id);
         }
+
+        private async Task LogErrorAsync(string message)
+        {
+            var log = new AppLog
+            {
+                LogDate = DateTime.UtcNow,
+                Message = message,
+                LoginId = User?.Identity?.Name ?? "Anonymous"
+            };
+
+            _context.AppLogs.Add(log);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

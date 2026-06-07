@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\Git\\AutoShop\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\models\\autorepairdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\models\\autorepairdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutoRepairDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Models\\AutoRepairDbContext.cs",
+              "RelativeDocumentMoniker": "AutoShop\\Models\\AutoRepairDbContext.cs",
+              "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Models\\AutoRepairDbContext.cs",
+              "RelativeToolTip": "AutoShop\\Models\\AutoRepairDbContext.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:30:17.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "AutoShop\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "AutoShop\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwCQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:27:21.907Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
