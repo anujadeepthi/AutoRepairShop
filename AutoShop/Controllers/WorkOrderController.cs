@@ -31,18 +31,25 @@ namespace AutoShop.Controllers
         // -------------------------
         // CREATE
         // -------------------------
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            var vm = new WorkOrderView
-            {
-                WorkOrder = new WorkOrder(),
-                Details = new List<WorkOrderDetail>
-                {
-                    new WorkOrderDetail()
-                }
-            };
+            try { 
+                    var vm = new WorkOrderView
+                    {
+                        WorkOrder = new WorkOrder(),
+                        Details = new List<WorkOrderDetail>
+                        {
+                            new WorkOrderDetail()
+                        }
+                    };
 
-            return View(vm);
+                    return View(vm);
+            }
+            catch (Exception ex)
+            {
+                await LogErrorAsync(ex.ToString());
+                return BadRequest("An error occurred!");
+            }
         }
 
         [HttpPost]
@@ -180,6 +187,22 @@ namespace AutoShop.Controllers
 
             return RedirectToAction("Index");
         }
+
+
+        private async Task LogErrorAsync(string message)
+        {
+            var log = new AppLog
+            {
+                LogDate = DateTime.UtcNow,
+                Message = message,
+                LoginId = User?.Identity?.Name ?? "Anonymous"
+            };
+
+            _context.AppLogs.Add(log);
+            await _context.SaveChangesAsync();
+        }
+
+
     }
 
 }

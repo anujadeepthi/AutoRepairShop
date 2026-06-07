@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Projects\\Git\\AutoShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\models\\autorepairdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\models\\autorepairdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|c:\\projects\\git\\autoshop\\autoshop\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6831B56E-0E01-8797-5227-B2F0EF617BFF}|AutoShop\\AutoShop.csproj|solutionrelative:autoshop\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Program.cs",
+              "RelativeDocumentMoniker": "AutoShop\\Program.cs",
+              "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Program.cs",
+              "RelativeToolTip": "AutoShop\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:58:06.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\appsettings.json",
+              "RelativeDocumentMoniker": "AutoShop\\appsettings.json",
+              "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\appsettings.json",
+              "RelativeToolTip": "AutoShop\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-07T20:58:03.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AutoShop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AutoShop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-07T20:53:47.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AutoShop\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AutoShop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T20:53:29.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AutoRepairDbContext.cs",
               "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Models\\AutoRepairDbContext.cs",
               "RelativeDocumentMoniker": "AutoShop\\Models\\AutoRepairDbContext.cs",
               "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Models\\AutoRepairDbContext.cs",
               "RelativeToolTip": "AutoShop\\Models\\AutoRepairDbContext.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwEsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T20:30:17.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "AutoShop\\Controllers\\CustomersController.cs",
               "ToolTip": "C:\\Projects\\Git\\AutoShop\\AutoShop\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "AutoShop\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAmwCQAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAYwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T20:27:21.907Z",
               "EditorCaption": ""

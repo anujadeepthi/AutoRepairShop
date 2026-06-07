@@ -4,5 +4,22 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <div class="mt-4">
+        <a asp-controller="Customers" asp-action="Index" class="btn btn-primary m-2">
+            Customers
+        </a>
+
+        <a asp-controller="Vehicles" asp-action="Index" class="btn btn-success m-2">
+            Vehicles
+        </a>
+
+        <a asp-controller="Employees" asp-action="Index" class="btn btn-warning m-2">
+            Employees
+        </a>
+
+        <a asp-controller="WorkOrder" asp-action="Index" class="btn btn-info m-2">
+            WorkOrders
+        </a>
+    </div>
 </div>
