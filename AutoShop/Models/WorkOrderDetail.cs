@@ -12,4 +12,6 @@ public partial class WorkOrderDetail
     public string? Cost { get; set; }
 
     public int? Line { get; set; }
+
+    public int? WorkOrder_Id { get; set; }
 }

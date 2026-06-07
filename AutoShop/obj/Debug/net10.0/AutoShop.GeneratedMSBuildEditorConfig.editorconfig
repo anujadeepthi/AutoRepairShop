@@ -107,6 +107,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Projects/Git/AutoShop/AutoShop/Views/WorkOrder/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya09yZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Git/AutoShop/AutoShop/Views/WorkOrder/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya09yZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Git/AutoShop/AutoShop/Views/WorkOrder/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya09yZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Git/AutoShop/AutoShop/Views/WorkOrder/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya09yZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Git/AutoShop/AutoShop/Views/WorkOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya09yZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projects/Git/AutoShop/AutoShop/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

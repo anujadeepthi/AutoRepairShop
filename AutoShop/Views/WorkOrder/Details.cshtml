@@ -1,0 +1,67 @@
+@model WorkOrderView
+
+<h2>Work Order Details</h2>
+
+<h4>Work Order Information</h4>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <td>@Model.WorkOrder.Id</td>
+    </tr>
+    <tr>
+        <th>Customer</th>
+        <td>@Model.WorkOrder.CustomerId</td>
+    </tr>
+    <tr>
+        <th>Vehicle</th>
+        <td>@Model.WorkOrder.VehicleId</td>
+    </tr>
+    <tr>
+        <th>Issue Reported</th>
+        <td>@Model.WorkOrder.IssueReported</td>
+    </tr>
+    <tr>
+        <th>Service Type</th>
+        <td>@Model.WorkOrder.ServiceType</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>@Model.WorkOrder.Status</td>
+    </tr>
+    <tr>
+        <th>Comments</th>
+        <td>@Model.WorkOrder.Comments</td>
+    </tr>
+</table>
+
+<h4>Work Order Line Items</h4>
+
+@if (Model.Details != null && Model.Details.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Line</th>
+                <th>Description</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var d in Model.Details)
+            {
+                <tr>
+                    <td>@d.Line</td>
+                    <td>@d.Description</td>
+                    <td>@d.Cost</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No detail items found for this Work Order.</p>
+}
+
+<a asp-action="Edit" asp-route-id="@Model.WorkOrder.Id" class="btn btn-primary">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

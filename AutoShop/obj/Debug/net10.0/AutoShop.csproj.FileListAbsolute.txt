@@ -673,10 +673,11 @@ C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\staticwebassets.build.json.c
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\staticwebassets.development.json
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\swae.build.ex.cache
-C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\AutoShop.csproj.Up2Date
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\AutoShop.dll
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\refint\AutoShop.dll
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\AutoShop.pdb
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\AutoShop.genruntimeconfig.cache
 C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\ref\AutoShop.dll
+C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\AutoShop.sourcelink.json
+C:\Projects\Git\AutoShop\AutoShop\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

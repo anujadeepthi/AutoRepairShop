@@ -80,6 +80,7 @@ public partial class AutoRepairDbContext : DbContext
             entity.HasKey(e => e.Id).HasName("WorkOrderDetails_pkey");
 
             entity.Property(e => e.Id).UseIdentityAlwaysColumn();
+            entity.Property(e => e.WorkOrder_Id).HasColumnName("WorkOrder_ID");
         });
 
         OnModelCreatingPartial(modelBuilder);

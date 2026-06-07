@@ -1,0 +1,115 @@
+﻿@model WorkOrderView
+
+<h2>Edit Work Order</h2>
+
+<form asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="WorkOrder.Id" />
+
+    <h3>Work Order</h3>
+
+    <div class="form-group">
+        <label>Customer</label>
+        <input asp-for="WorkOrder.CustomerId" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Vehicle</label>
+        <input asp-for="WorkOrder.VehicleId" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Issue Reported</label>
+        <textarea asp-for="WorkOrder.IssueReported" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Service Type</label>
+        <input asp-for="WorkOrder.ServiceType" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Status</label>
+        <input asp-for="WorkOrder.Status" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Comments</label>
+        <textarea asp-for="WorkOrder.Comments" class="form-control"></textarea>
+    </div>
+
+    <hr />
+
+    <h3>Work Order Details</h3>
+
+    <table class="table" id="detailsTable">
+        <thead>
+            <tr>
+                <th>Line</th>
+                <th>Description</th>
+                <th>Cost</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @for (int i = 0; i < Model.Details.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <input type="hidden" asp-for="Details[i].Id" />
+                        <input asp-for="Details[i].Line" class="form-control" />
+                    </td>
+                    <td>
+                        <input asp-for="Details[i].Description" class="form-control" />
+                    </td>
+                    <td>
+                        <input asp-for="Details[i].Cost" class="form-control" />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger" onclick="removeRow(this)">X</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-secondary" onclick="addRow()">Add Detail</button>
+
+    <br /><br />
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+
+</form>
+
+@section Scripts {
+    <script>
+        function addRow() {
+            var table = document.getElementById("detailsTable").getElementsByTagName("tbody")[0];
+            var rowCount = table.rows.length;
+
+            var row = table.insertRow();
+
+            row.innerHTML = `
+                <td>
+                    <input name="Details[${rowCount}].Line" class="form-control" />
+                </td>
+                <td>
+                    <input name="Details[${rowCount}].Description" class="form-control" />
+                </td>
+                <td>
+                    <input name="Details[${rowCount}].Cost" class="form-control" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" onclick="removeRow(this)">X</button>
+                </td>
+            `;
+        }
+
+        function removeRow(btn) {
+            var row = btn.closest("tr");
+            row.remove();
+        }
+    </script>
+}
